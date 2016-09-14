@@ -1,0 +1,13 @@
+html
+  body
+    form(action='http://localhost:8081/submitSignUp', method='post')
+      | enter email:
+      input(type='text', name='email')
+      br
+      | enter username:
+      input(type='text', name='username')
+      br
+      | enter password:
+      input(type='password', name='password')
+      br
+      input(type='submit', value='submit')

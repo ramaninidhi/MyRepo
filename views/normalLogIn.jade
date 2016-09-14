@@ -1,0 +1,12 @@
+html
+  body
+    form(action='http://localhost:8081/submitLogIn', method='post')
+      | enter username:
+      input(type='text', name='username')
+      br
+      | enter password:
+      input(type='password', name='password')
+      br
+      input(name='usertype',  value='#{usertype}')
+      br
+      input(type='submit', value='submit')
