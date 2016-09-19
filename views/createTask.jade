@@ -1,0 +1,13 @@
+html
+  body
+    form(action='http://localhost:8081/submitCreateTask', method='post')
+      | enter taskName:
+      input(type='text', name='taskName')
+      br
+      | enter taskStart time:
+      input(type='datetime-local', name='taskStart')
+      br
+      | enter taskEnd time:
+      input(type='datetime-local', name='taskEnd')
+      br
+      input(type='submit', value='submit')

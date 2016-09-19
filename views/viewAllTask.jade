@@ -1,0 +1,6 @@
+html
+  body
+    h4 = #{tasks}
+    for user in tasks
+      li  #{user.taskName}
+      a(href='deleteUser?id=#{user.taskName}') delete
