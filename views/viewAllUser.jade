@@ -1,5 +1,6 @@
-extends layout
-
-block content
-
-  p Task:  #{users}
+html
+  body
+    h4 = #{users}
+    for user in users
+      li  #{user.name}
+      a(href='deleteUser?id=#{user.name}') delete

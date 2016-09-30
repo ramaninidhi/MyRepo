@@ -9,5 +9,5 @@ var userSchema = new Schema({
   usertype: String
 });
 
-var User = mongoose.model('User',userSchema);
-module.exports = User;
+//var User = mongoose.model('User',userSchema);
+//module.exports = User;

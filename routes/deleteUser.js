@@ -7,9 +7,9 @@ app.use(bodyParser.json());
 app.use( bodyParser.urlencoded({ extended: false}))
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  User.findAndRemove({name: req.query.id},function(err,user){
+  User.findOneAndRemove({name: req.query.id},function(err,user){
   console.log(user);
-  res.render('viewAllUser',{Users: user})
+  res.redirect('viewAllUser')
   })
 
 
